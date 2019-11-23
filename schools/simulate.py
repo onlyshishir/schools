@@ -18,12 +18,12 @@ def simulate():
 	current_date = frappe.utils.getdate(start_date)
 	runs_for = frappe.utils.date_diff(frappe.utils.nowdate(), current_date)
 
-	print "Approving Students..."
+	print ("Approving Students...")
 	for d in xrange(200):
 		approve_random_student_applicant()
 		enroll_random_student(current_date)
 
-	print "Making Course Schedules..."
+	print ("Making Course Schedules...")
 
 	cd = current_date
 	for i in xrange(1,4):
