@@ -14,15 +14,15 @@ def make():
 	frappe.set_user("Administrator")
 
 def setup():
-	print "Completing Setup..."
+	print ("Completing Setup...")
 	complete_setup()
-	print "Making Masters..."
+	print ("Making Masters...")
 	make_masters()
 	make_student_applicants()
 	make_student_group()
 	make_fees_category()
 	make_fees_structure()
-	print "Starting Simulation..."
+	print ("Starting Simulation...")
 	time.sleep(5)
 	simulate()
 
